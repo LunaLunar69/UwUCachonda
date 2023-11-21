@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+@font-face {
+    font-family: "poppins";
+    src: url('assets/13.png');
+}
+
+body{
+    background: #ffffff;
+}
+
+header{
+    background:linear-gradient(
+        rgba(0,0,0,.6),
+        rgba(0,0,0,.2),
+        rgba(0,0,0,.6)
+    ), url('assets/latios.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* menu */
+
+nav{
+    position: fixed;
+    width: 100%;
+}
+
+nav ul{
+    text-align: center;
+    list-style: none;
+    margin-top: top;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+    transition: all .3s ease;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+}
+
+nav ul li:hover a{
+    border-bottom: 1px solid #fff;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* header */
+
+.container-title{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-title h1{
+    font-size: 48px;
+    color: #fff;
+    border: 10px double #fff;
+    padding: 70px 50px;
+    font-family: "Poppins"!important;
+}
+
+/*  Principal  */
+
+article{
+    padding-top: 50px;
+    text-align: center;
+    border-bottom: 5px dotted gray;
+    margin-bottom: 20px;
+}
+
+article h3{
+    font-size: 32px;
+    padding: 0 0 30px 0;
+}
+
+article p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+blockquote{
+    font-size: 18px;
+}
+.table{
+    padding-bottom: 20px;
+}
+
+@media(min-width: 576px){
+    div.cont-table{
+        width: 50%;
+        float: left;
+        display: inline-block;
+    }
+}
+
+.cont-table{
+    width: 100%;
+}
+
+.cont-table table{
+    width: 100%;
+    text-align: center;
+}
+
+.cont-table table td{
+    padding: 40px 20px;
+}
+
+@media (min-width:576px){
+    div.img-tabla{
+        width: 50%;
+        display: inline-block;
+        height: 300px;
+        overflow: 100%;
+    }
+}
+
+.img-tabla{
+    width: 100%;
+}
+
+.img-tabla img{
+    width: 100%;
+}
+
+/* seccion llamada */
+
+.llamada{
+    background: url('assets/latias.png');
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 0;
+}
+
+
+.llamada-texto{
+    text-align: center;
+}
+
+.llamada-texto h3{
+    font-size: 32px;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.llamada-texto button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background: #ffa630;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 2px;
+    transition: all .3s ease;
+}
+
+.contacto{
+    padding: 20px 20px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+/* footer */
+
+footer{
+    height: 50px;
+    background: #152537;
+    text-align: center;
+    padding-top: 15px;
+}
+
+footer p{
+    color: #fff;
+}
